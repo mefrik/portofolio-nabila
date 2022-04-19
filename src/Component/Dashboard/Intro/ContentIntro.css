@@ -1,0 +1,12 @@
+.contentintro-textarea{
+    height: 100%;
+}
+
+.contentintro-add-box{
+    width: 100%;
+    display: flex;
+}
+.contentintro-input-expertise{
+    height: 100%;
+    width: 100%;
+}

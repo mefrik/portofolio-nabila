@@ -1,0 +1,14 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+*{
+    text-decoration: none;
+}

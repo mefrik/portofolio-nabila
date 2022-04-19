@@ -1,0 +1,11 @@
+.contentaboutme-field{
+    display: flex;
+}
+
+.contentaboutme-field-medsos-btm{
+    display: flex;
+}
+
+.contentaboutme-textarea{
+    height: 100%;
+}

@@ -1,0 +1,121 @@
+.sidenav-container-active{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    transition: 0.5s;
+    position: relative;
+    left: 0%;
+    background: linear-gradient(rgb(147, 147, 147, 20%), whitesmoke);
+}
+
+
+.sidenav-container-hide{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    transition: 350ms;
+    position: relative;
+    left: -70%;
+    background: linear-gradient(rgb(147, 147, 147, 20%), whitesmoke);
+}
+
+.sidenav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.sidenav-image{
+    margin: 0;
+}
+
+.sidenav-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidenav-list-menu-top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidenav-list{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    border:none;
+    height: 10vh;
+    background: none;
+    padding-left: 20px;
+}
+
+.sidenav-list-menu-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav-list-text-active{
+    text-indent: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.sidenav-list-text-hide{
+    display: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.icon-active{
+    display: flex;
+    align-items: center;
+    padding-left: 0%;
+    transition: 0.25s ease-in-out;
+}
+
+.icon-hide{
+    display: flex;
+    align-items: center;
+    padding-left: 80%;
+    transition: 0.25s ease-in-out;
+}
+
+.sidenav-list:hover{
+    cursor: pointer;
+    color: rgb(211, 129, 241);
+    transition: 0.25s;
+    font-weight: bold;
+    box-shadow: 4px 0px 3px 0px;
+    border-radius: 1px;
+}
+
+.sidenav-back{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: fit-content;
+    padding-right: 15px;
+    border-top: 1px solid grey;
+}
+
+.sidenav-back:hover{
+    cursor: pointer;
+    color: rgb(211, 129, 241);
+    transition: 0.5s;
+}
+
+#Intro:current{
+    color: red;
+}

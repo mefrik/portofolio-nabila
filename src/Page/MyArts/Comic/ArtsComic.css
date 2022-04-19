@@ -1,0 +1,43 @@
+.gallerycomic-container{
+    /* display:contents; */
+    height: auto;
+}
+
+.gallerycomic-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: inline-flex;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+
+.gallerycomic-card-container{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallerycomic-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;display: flex;
+    position: absolute;
+    z-index: 1;
+    text-shadow: 1px 1px 10px white, 0px 0px 20px white, 0px 0px 20px white;
+}
+
+.gallerycomic-title-image{
+    display: flex;
+    opacity: 0.5;
+}
+
+.galleryComicFrame{
+    width: 100%;
+    height: 100vh;
+}

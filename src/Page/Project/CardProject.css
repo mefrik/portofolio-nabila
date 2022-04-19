@@ -1,0 +1,71 @@
+.project-card-container{
+    z-index: 2;
+}
+.card-container{
+    background-color: white;
+    /* border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 2px 1px gainsboro; */
+    /* height: 60vh;
+    width: 50vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 15px;
+}
+.card-container:hover{
+    /* cursor: pointer; */
+    box-shadow: 0px 0px 10px 2px rgb(211, 129, 241);
+    transition: 0.5s;
+    transform: scale(1.03);
+    transition: 0.5 ease-in-out;
+    z-index: 1;
+}
+
+
+/* Image Thumbnail Card */
+.card-image{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 40vh;
+    width: 50vh;
+    border-radius: 4px 4px 4px 4px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+
+
+
+
+/* Text Card */
+.card-desc-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-title{
+    /* border: 1px solid blue; */
+    height: 4vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-desc{
+    /* border: 1px solid green; */
+    width: auto;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+
+/* @media (max-width : 800px) {
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+} */

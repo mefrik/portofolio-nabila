@@ -1,0 +1,33 @@
+.detailproject-container{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    transition: ease-in-out;
+}
+
+
+.detailproject-image{
+    object-fit: cover;
+}
+
+.thumbnail{
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 800px;
+    max-width: 800px;
+}
+.images{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+
+@media (max-Width: 800px) {
+    .detailproject-container{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+    }
+}

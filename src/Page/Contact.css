@@ -1,0 +1,9 @@
+.contact-box{
+    width: 30vh;
+}
+
+@media (min-width: 800px) {
+    .contact-box{
+        width: 50vh;
+    }
+}

@@ -1,0 +1,33 @@
+.footernav-container{
+    min-height: 8vh;
+    height: auto;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.footernav-media-social{
+    display: flex;
+}
+.fnav{
+    margin-right: 10px;
+    display: flex;
+}
+
+.footernav-copyright{
+    display: flex;
+    align-items: center;
+}
+
+.footernav-copyright-year{
+    margin-left: 10px;
+}
+
