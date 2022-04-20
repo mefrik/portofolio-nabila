@@ -1,9 +1,9 @@
 .contact-box{
-    width: 30vh;
+    width: 50vh;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .contact-box{
-        width: 50vh;
+        width: auto;
     }
 }

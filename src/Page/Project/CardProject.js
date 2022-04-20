@@ -1,12 +1,11 @@
 import React from 'react';
 import './CardProject.css'
-import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-import { Chip, Stack } from '@mui/material';
+import { Chip } from '@mui/material';
 import { useNavigate } from 'react-router';
 
 export default function CardProject(props) {
@@ -19,38 +18,91 @@ export default function CardProject(props) {
     // console.log(props)
     navigate(params)
   }
-
-  return (
-    <Card 
-        Paper elevation={3} 
-        sx={{ width: 250, height: 'auto', zIndex: 1 }} 
-        className='card-container' 
-        key={props.id}
-    >
-      <CardHeader
-        title={props.title}
-        subheader={Date(props.startDate)}
-      />
-      <CardMedia
-        component="img"
-        height="194"
-        image={props.urlThumbnail}
-        // alt="Paella dish"
-      />
-      <Stack display='flex' flexDirection={'row'} justifyContent='space-between'>
-        <CardContent>
-            <Chip label={props.category} color="success" />
-        </CardContent>
-        <CardActions>
-            <Button 
-              size="large" 
-              sx={{fontWeight: 'bold'}}
-              onClick={handleClick}
-            >
-              Read More
-            </Button>
-        </CardActions>
-      </Stack>
-    </Card>
-  );
+  if(props.number % 2 == 1){
+    return (
+      <>
+        <div
+            className='card-container-odd' 
+            key={props.id}
+        >
+          <CardMedia
+            open={false}
+            className='card-image-odd'
+            component="img"
+            image={props.urlThumbnail}
+            // alt="Paella dish"
+          />
+          <div className='card-desc-odd'>
+            <CardHeader
+              title={props.title}
+              subheader={Date(props.startDate)}
+              className='card-header-odd'
+            />
+            <div className='card-footer-odd'>
+              <CardContent>
+                  <Chip label={props.category} color="success" />
+              </CardContent>
+              <CardActions>
+                  <Button 
+                    size="medium" 
+                    sx={{fontWeight: 'bolder', zIndex: '1'}}
+                    onClick={handleClick}
+                  >
+                    Read More
+                  </Button>
+              </CardActions>
+            </div>
+          </div>
+          <div className='card-index-odd'>
+            <p className='number-index-odd'>{props.number}</p>
+          </div>
+        </div>
+      </>
+    );
+  }else {
+    return (
+      <>
+        <div
+            className='card-container-even' 
+            key={props.id}
+        >
+          <div className='card-index-even'>
+            <p className='number-index-even'>{props.number}</p>
+          </div>
+          <div className='card-desc-even'>
+            <CardHeader
+              title={props.title}
+              subheader={Date(props.startDate)}
+              sx={{
+                display: 'flex',
+                textAlign: 'right'
+              }}
+            />
+            <div className='card-footer-even'>
+              <CardActions>
+                  <Button 
+                    size="medium" 
+                    sx={{fontWeight: 'bolder', zIndex: '1'}}
+                    onClick={handleClick}
+                  >
+                    Read More
+                  </Button>
+              </CardActions>
+              <CardContent>
+                  <Chip label={props.category} color="success" />
+              </CardContent>
+            </div>
+          </div>
+          <CardMedia
+            open={false}
+            className='card-image-even'
+            component="img"
+            image={props.urlThumbnail}
+            // alt="Paella dish"
+          />
+        </div>
+      </>
+    );
+  }
+  
 }

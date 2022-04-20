@@ -20,8 +20,8 @@ class Project extends Component{
     handleGetData = async () =>{
         const getDataListProject = await getDocs(this.state.listProjectCollectionRef);
         this.setState({
-            DataProject: getDataListProject.docs.map((doc) => ({ 
-            ...doc.data(), id: doc.id}))
+            DataProject: getDataListProject.docs.map((doc, index) => ({ 
+            ...doc.data(), id: doc.id, number: index + 1}))
         })
     }
 
@@ -59,7 +59,6 @@ class Project extends Component{
                             item xs={12}
                             container
                             columns={{ sm: 4, md: 3 }}
-                            justifyContent="center"
                             alignItems="center"
                             display='flex'
                             mt='60px'

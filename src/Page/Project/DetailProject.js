@@ -8,10 +8,6 @@ import 'antd/dist/antd.css';
 import './DetailProject.css'
 
 const marginImamge = '40px';
-const minWImgThumbnail = '100px';
-const maxWImgThumbnail = '200px';
-const minWImgOthers = '5px';
-const maxWImgOthers = '5px';
 const marginText = '20px';
 
 const DetailProject = () => {
@@ -44,7 +40,7 @@ const DetailProject = () => {
         container='sm'
         sx={{
           display: 'flex',
-          height: '100vh',
+          height: 'auto',
           flexDirection: 'row',
           alignItems: 'center',
         }}
@@ -75,16 +71,18 @@ const DetailProject = () => {
           mt={marginText}
           variant="subtitle1" 
           component="div"
+          className='detailprojec-desc'
         >
           {data.description}
         </Typography>
         <Grid 
           item xs={12} 
-          sx={{
-            display: 'flex', 
-            justifyContent: 'space-evenly'
-            }}
+          // sx={{
+          //   display: 'flex', 
+          //   justifyContent: 'space-evenly'
+          //   }}
           mt={marginImamge}
+          className='detailproject-image-btm'
         >
           <Image
             className='detailproject-image images'
